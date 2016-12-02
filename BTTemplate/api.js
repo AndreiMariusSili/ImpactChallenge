@@ -33,7 +33,17 @@ url: apiUrl,
     });
 }
 
+
+
 function ProcessResult(response)
 {
+    var anger = response[0]['scores']['anger'];
+    var contempt = response[0]['scores']['contempt'];
+    var disgust = response[0]['scores']['disgust'];
+    var fear = response[0]['scores']['fear'];
+    var happiness = response[0]['scores']['happiness'];
+    var neutral = response[0]['scores']['neutral'];
+
+    
     console.log(response); //temp
 }
