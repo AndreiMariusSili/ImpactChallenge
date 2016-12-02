@@ -1,3 +1,18 @@
 #dropzone {
-    min-height: 315px;
+    min-height: 305px;
+    background-color: transparent;
+    border-radius: 10px;
+    border-style: dashed;
+    border-color: white;
+}
+
+.dz-image-preview {
+    background-color: transparent !important;
+}
+
+.dz-message {
+    margin-top: 100px !important;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
 }
