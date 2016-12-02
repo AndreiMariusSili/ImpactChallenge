@@ -22,19 +22,18 @@
 
         <!-- Custom CSS -->
         <link href="css/style.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/dropzone-style.css">
+
+        <link href="css/dropzone-style.css" rel="stylesheet">
 
         <!-- Custom Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
 
         <!-- Template js -->
-        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="js/jquery.appear.js"></script>
         <script src="js/jqBootstrapValidation.js"></script>
-        <script src="js/modernizr.custom.js"></script>
-        <script src="js/script.js"></script>
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,7 +53,6 @@
     </head>
     
     <body>
-        
         <!-- Start Logo Section -->
         <section id="logo-section" class="text-center">
             <div class="container">
@@ -78,21 +76,21 @@
                     <div class="col-md-3">
                         
                         <div class="menu-item blue">
-                            <a href="#feature-modal" data-toggle="modal">
-                                <img src=images/happiness.svg width="25%">
+                            <a href="#feature-modal" data-toggle="modal" id="happiness">
+                                <img src=images/happiness.svg width="25%" >
                                 <p>Happiness</p>
                             </a>
                         </div>
                         
                         <div class="menu-item green">
-                            <a href="#portfolio-modal" data-toggle="modal">
+                            <a href="#portfolio-modal" data-toggle="modal" id="sadness">
                                 <img src=images/sadness.svg width="25%">
                                 <p>Sadness</p>
                             </a>
                         </div>
                         
                         <div class="menu-item light-red">
-                            <a href="#about-modal" data-toggle="modal">
+                            <a href="#about-modal" data-toggle="modal" id="anger">
                                 <img src=images/anger.svg width="25%">
                                 <p>Anger</p>
                             </a>
@@ -100,7 +98,7 @@
                         
                         <div class="menu-item color">
  
-                            <a href="#about-modal" data-toggle="modal">
+                            <a href="#about-modal" data-toggle="modal" id="surprise">
  
                                 <img src=images/surprise.svg width="25%">
  
@@ -124,14 +122,14 @@
                     <div class="col-md-3">
                         
                         <div class="menu-item light-red">
-                            <a href="#contact-modal" data-toggle="modal">
+                            <a href="#contact-modal" data-toggle="modal" id="contempt">
                                 <img src=images/contempt.svg width="25%">
                                 <p>Contempt</p>
                             </a>
                         </div>
                         
                         <div class="menu-item color">
-                            <a href="#testimonial-modal" data-toggle="modal">
+                            <a href="#testimonial-modal" data-toggle="modal" id="disgust">
                                 <img src=images/disgust.svg width="25%">
                                 <p>Disgust</p>
                             </a>
@@ -139,7 +137,7 @@
  
                         <div class="menu-item green">
  
-                            <a href="#news-modal" data-toggle="modal">
+                            <a href="#news-modal" data-toggle="modal" id="neutral">
  
                                 <img src=images/neutral.svg width="25%">
  
@@ -151,7 +149,7 @@
 
 
                         <div class="menu-item blue">
-                            <a href="#news-modal" data-toggle="modal">
+                            <a href="#news-modal" data-toggle="modal" id="fear">
                                 <img src=images/fear.svg width="25%">
                                 <p>Fear</p>
                             </a>

@@ -6,8 +6,14 @@ $(document).ready( function(){
 
     $(function(){
         var myDropzone = new Dropzone("#dropzone");
+        // Dropzone.options.myDropzone = {
+        // addRemoveLinks: true,
+        //     removedfile: function(file) {
+        //         var _ref;
+        //         return (_rgef = file.previewElement) != null ? _ref.parentNode.removeChild(file.previewElement) : void 0;
+        //       }
+        // }
         myDropzone.on("addedfile", function(file) {
-            console.log(file);
             callAPI(file, apiUrl, apiKey);
         });
     })
@@ -27,6 +33,9 @@ url: apiUrl,
     })
     .done(function (response) {
         ProcessResult(response);
+        setTimeout(function(){
+            $('a').removeClass('animated wobble');
+        }, 3000)
     })
     .fail(function (error) {
         $("#response").text(error.getAllResponseHeaders());
@@ -55,7 +64,8 @@ function ProcessResult(response)
         emotionScores = [person.scores.anger, person.scores.contempt, person.scores.disgust, person.scores.fear, person.scores.happiness, person.scores.neutral];
         emotionMax = Math.max.apply(this, emotionScores);
         emotionIndex = $.inArray(emotionMax,emotionScores);
-        console.log(emotions[emotionIndex]);
+        
+        $("#" + emotions[emotionIndex]).addClass('animated wobble');
 
     })
 }

@@ -1,5 +1,5 @@
 #dropzone {
-    min-height: 305px;
+    min-height: 562px;
     background-color: transparent;
     border-radius: 10px;
     border-style: dashed;
@@ -11,7 +11,7 @@
 }
 
 .dz-message {
-    margin-top: 100px !important;
+    margin-top: 50% !important;
     color: white;
     font-size: 20px;
     font-weight: bolder;
