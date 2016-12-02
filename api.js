@@ -35,5 +35,11 @@ url: apiUrl,
 
 function ProcessResult(response)
 {
-    console.log(response); //temp
+    console.log(response);
+    console.log("anger="+response[0]['scores']['anger']);
+ console.log("contempt="+response[0]['scores']['contempt']);
+ console.log("disgust="+response[0]['scores']['disgust']);
+ console.log("fear="+response[0]['scores']['fear']);
+ console.log("happiness="+response[0]['scores']['happiness']);
+ console.log("neutral="+response[0]['scores']['neutral']); //temp
 }
