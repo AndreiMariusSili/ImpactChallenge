@@ -958,3 +958,11 @@ and (max-width : 991px) {
     padding: 20px;
     color: #fff;
 }
+
+/*dropzone */
+#dropzone {
+    text-align: center;
+    vertical-align: center;
+    color: gray;
+}
+
