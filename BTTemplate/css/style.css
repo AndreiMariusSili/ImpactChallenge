@@ -166,10 +166,11 @@ fieldset[disabled] .btn-primary.active {
     color: #fff;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
-	
+	width: 90%;
+ 
 }
 
 .menu-item a {
