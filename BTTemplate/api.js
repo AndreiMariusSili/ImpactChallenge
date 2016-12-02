@@ -58,14 +58,13 @@ function ProcessResult(response)
     var emotions = ["anger", "contempt", "disgust", "fear", "happiness", "neutral"];
     var emotionIndex = -100;
 
-    console.log(response);
-
     response.forEach(function(person) {
         emotionScores = [person.scores.anger, person.scores.contempt, person.scores.disgust, person.scores.fear, person.scores.happiness, person.scores.neutral];
         emotionMax = Math.max.apply(this, emotionScores);
         emotionIndex = $.inArray(emotionMax,emotionScores);
+
+        console.log(person.scores);
         
         $("#" + emotions[emotionIndex]).addClass('animated wobble');
-
     })
 }
