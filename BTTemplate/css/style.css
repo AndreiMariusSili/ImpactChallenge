@@ -170,8 +170,33 @@ fieldset[disabled] .btn-primary.active {
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 	width: 90%;
- 
+    margin: 0 3% 20px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
+  
+  &.open {
+    border-color: #dd0000;
+    width: 96%;
+    height: 180px;
+    margin: 0;
+  }
+
+  &.out {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+  }
+
 
 .menu-item a {
     color: #fff;
