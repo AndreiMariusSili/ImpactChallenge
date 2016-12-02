@@ -43,7 +43,17 @@ function ProcessResult(response)
     var fear = response[0]['scores']['fear'];
     var happiness = response[0]['scores']['happiness'];
     var neutral = response[0]['scores']['neutral'];
-
     
+    var arr = [anger, contempt, disgust, fear, happiness, neutral];
+    var arr1 = ["anger", "contempt", "disgust", "fear", "happiness", "neutral"];
+    var maxValue = Math.max.apply(this, arr);
+    var maxValueIn = $.inArray(maxValue,arr);
+    
+    var maximum = Math.max(anger, contempt, disgust, fear, happiness, neutral);
+    var value = maxValueIn;
+
+
+    console.log (maximum);
+    console.log (arr1[maxValueIn]);
     console.log(response); //temp
 }
